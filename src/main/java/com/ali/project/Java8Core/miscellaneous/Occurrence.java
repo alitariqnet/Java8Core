@@ -36,7 +36,7 @@ public class Occurrence {
             if(m.containsKey(i)) {
                 value = m.get(i);
                 for (int j = 0; j < arr.length; j++) {
-                    // add value +1 for new occurance in the array
+                    // add value +1 for new occurrence in the array
                     if(i==arr[j]) {
                         value++;
                         m2.put(i, value);
@@ -56,7 +56,7 @@ public class Occurrence {
             }
         }
         System.out.println();
-        System.out.println("max repeated number is "+number+" and its occurance is "+maxNumber);
+        System.out.println("max repeated number is "+number+" and its occurrence is "+maxNumber);
     }
     public static void easyWay(int []arr) {
 

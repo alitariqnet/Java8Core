@@ -15,14 +15,14 @@ public class Streaming {
     private static final Logger log =
             LogManager.getLogger(Streaming.class);
     
-    // can be written here but not inside main method
-    // this code block will be run once on loading the
-    // and not with every class object creation time
+    // static block can be written here but not inside the main method
+    // this code block will run once on the loading and/or initialization of the class
+    // and not with the time of creation of every object of the class
     static {
         log.info("inside static block inside Streaming");
     }
 
-    // this instance block will be run every time an object is created
+    // this instance block will run every time an object is created
     {
         log.info("inside instance block");
     }
