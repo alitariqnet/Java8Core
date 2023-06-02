@@ -7,17 +7,17 @@ public abstract class SuperClass implements DingDongInterface {
     public static Logger log = LogManager.getLogger(SuperClass.class);
     String name;
     public SuperClass(String name) {
-        log.info("Inside super class after sending in Super");
+        log.info("Inside super class constructor");
         this.name = name;
-
     }
 
     /**
      *
      */
     @Override
-    public void printName() {
-
+    public void printName(String name) {
+        System.out.println("inside superclass printName method");
+        System.out.println(name);
     }
 
     public void sayHello(){

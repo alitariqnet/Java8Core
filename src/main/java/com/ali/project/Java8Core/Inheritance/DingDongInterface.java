@@ -1,7 +1,7 @@
 package com.ali.project.Java8Core.Inheritance;
 
 public interface DingDongInterface {
-    void printName();
+    void printName(String name);
     void sayHello();
 
     int sum(int a, int b);
